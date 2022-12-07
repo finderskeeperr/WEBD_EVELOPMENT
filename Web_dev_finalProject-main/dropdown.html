@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="https://fonts.googleapis.com/css?family=Fredoka One" rel="stylesheet"/>
+          <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+          <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+      
+      
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+          <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"/>
+          <title>Document</title>
+             
+          <style>
+              body{
+                              background: #923e3e;
+                    }
+                    .select-menu{
+                              height:35px;
+                              margin-top:105px;
+                              padding-top: 15px;
+                              background: #d0f3a5;
+                              border: 1px solid #6c8054;
+                              margin-left:245px;
+                              width: 200px;
+                              border-radius: 15px;
+                              cursor: pointer; 
+                              font-family: "Fredoka One";
+                              list-style-type: none;
+                    }
+                    .select-menu .select-btn{
+                               display: flex;
+                              width: 200px;
+                              justify-content: space-around;
+                              align-items: center;
+                             
+
+                    }
+                    .select-btn i{
+                              font-size:25px; 
+                              transition: 0.3s;
+
+                    }
+                    .select-menu.active .select-btn i{
+                              transform:rotate(-180deg);
+                    }
+                    
+                    .select-menu.active .options{
+                              display: none;
+
+                    }
+                    .select-menu .options{
+                              padding: 5px;
+                              margin-top: 15px;
+                              width: 185px;
+                              margin-left: 1px;
+                              justify-content: space-around;
+                              display: none;
+                              background: #d0f3a5;                              
+                              border-radius: 8%;
+                    }
+                   
+                    .select-menu.active .options{
+                              display: block;
+
+                    }
+                    .options .option{
+
+                              display: flex;
+                              margin: 8px;
+                              height:45px;
+                              margin-top: 5px;
+                              cursor: pointer;
+                              border-radius:  15px;
+                              align-items: center;
+
+
+                    }
+                    .options .option:hover{
+                              background:#9f9a54;                
+                    }
+                    .options i{
+                             font-size: 25px;
+                              margin-left: 20px; 
+
+                    }
+                     option .option-text{
+                              font-size: 18px;
+                              margin-left: 30%;
+                              border-radius: 15px;
+                     }
+
+
+          </style>
+</head>
+<body>
+          
+  <div class="select-menu">
+                    <div class="select-btn">
+                      <span class="sBtn-text">Status</span>
+                      <i class="bx bxs-caret-down-square" style="color:#605555"></i>
+                    </div>
+                      <ul class="options">
+                          <li class="option">
+                              <i class="bx bxs-flag-alt" id = "option" style="color:#dc1d1d"> </i> 
+                            <span class="option-text">Urgent</span>
+                          </li>
+                          <li class="option">
+                              <i class="bx bxs-flag-alt" id = "option" style="color:#dedb29"  > </i> 
+                            <span class="option-text">High</span>
+                          </li>
+                          <li class="option">
+                              <i class="bx bxs-flag-alt" id = "option" style= "color:#165275"  > </i>
+                            <span class="option-text">Low</span>
+                          </li>
+                          <li class="option">
+                              <i class="bx bxs-flag-alt" id = "option" style= "color:#646a6f"  > </i> 
+                            <span class="option-text">Normal</span>
+                          </li>
+                      </ul>
+                    </li>
+  </div>
+        <script src="script.js"></script>   
+</body>
+</html>
